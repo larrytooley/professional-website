@@ -1,10 +1,52 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  color: #8a8a8a;
+  font-family: "Lato", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 38px;
+}
+
+.nav-links {
+  display: flex;
+}
+
+nav .nav-links div {
+  margin-right: 20px;
+  font-size: 0.9em;
+  text-transform: uppercase;
+}
+
+.brand {
+  text-transform: uppercase;
+}
+
+.nav-link {
+  height: 22px;
+  border: 1px solid transparent;
+  transition: border-bottom 0.5s;
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.5s;
+}
+
+.nav-link:hover {
+  border-bottom: 1px solid black;
+}
+
+.nav-link a:hover {
+  color: black;
 }
